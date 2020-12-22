@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("https://t3.ftcdn.net/jpg/01/75/43/98/240_F_175439810_rlIYWUCMkI8wUlYh2Chfs5YKw7SEaHxH.jpg");
+    /* fill-opacity: 10%; */
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+body::before{
+    content: '';
+    position: absolute;
+    box-sizing: border-box;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 60%;
+    z-index: -1;
+
+}
+*,body,input,
+textarea,button{
+    font-family: 'Dancing Script', cursive;
+    font-weight: 500;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+.container{
+    max-width: 1250px;
+    margin: auto;
+}
+.container h1{
+    text-align: center;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+header{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
+header .brandName {
+    padding: 0 15px;
+}
+header .nav {
+    padding: 0 15px;
+}
+header .nav{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+header .nav ul li {
+    display:inline-block;
+    margin-left: 30px;
+}
+header .nav ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 900;
+    padding: 10px;
+    display: block;
+    color: orange;
+}
+header .nav ul li a:hover{
+    overflow: hidden;
+    color: white;
+    text-decoration: white underline solid 2px;
+    border: orangered solid 1px;
+    border-radius: 5px;
+    background-color: orangered;
+    font-size: 125%;
+    font-family: 'Indie Flower', cursive;
+}
+header .brandName a{
+    font-size: 40px;
+    color: orange;
+}
+header .brandName a:hover{
+    overflow: hidden;
+    color:white;
+    font-size: 50px;
+}
+.Home-Section .row{
+    min-height: 100vh;
+}
+.Home-Section .home-content {
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+}
+.Home-Section .home-content h1{
+    font-size: 60px;
+    margin: 0;
+    color: orange;
+    font-weight: 900;
+    letter-spacing: 10px;
+
+}
